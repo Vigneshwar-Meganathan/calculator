@@ -36,5 +36,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "publishConfig":{"registry":"https://vigneshmeganathan.jfrog.io/artifactory/api/npm/npmrepo-npm/"}
 }
