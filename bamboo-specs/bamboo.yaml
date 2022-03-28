@@ -2,10 +2,10 @@
 version: 2
 plan:
   project-key: MARS
-  key: ROCKET
-  name: Build the Rocket
+  key: RCTPUB
+  name: React-Publish-Yaml
 stages:
-  - Build hull:
+  - Stage-Publish:
     - React-JS-CI
 
 React-JS-CI:
@@ -32,5 +32,5 @@ React-JS-CI:
    - script:
       interpreter: SHELL
       scripts:
-        - npm publish --registry https://vigneshmeganathan.jfrog.io/artifactory/api/npm/viky2204-npm-local/
+        - npm publish --registry https://vigneshmeganathan.jfrog.io/artifactory/api/npm/viky2204-npm-local/ -f build/
       description: Publish npm build on Jfrog artifacts 
