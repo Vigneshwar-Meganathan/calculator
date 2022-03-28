@@ -17,4 +17,4 @@ React-JS-CI:
        configuration:
          isolatedCache: 'false'
          runtime: Node.js Path 14-03-2022
-         command: install
+         command: i
