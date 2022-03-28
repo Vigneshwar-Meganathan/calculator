@@ -32,5 +32,5 @@ React-JS-CI:
    - script:
       interpreter: SHELL
       scripts:
-        - npm publish --registry https://vigneshmeganathan.jfrog.io/artifactory/api/npm/viky2204-npm-local/ -f build/
+        - npm publish --registry https://vigneshmeganathan.jfrog.io/artifactory/api/npm/viky2204-npm-local/
       description: Publish npm build on Jfrog artifacts 
