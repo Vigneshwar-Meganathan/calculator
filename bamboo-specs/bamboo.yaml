@@ -17,4 +17,12 @@ React-JS-CI:
        configuration:
          isolatedCache: 'false'
          runtime: Node.js Path 14-03-2022
-         command: i
+         command: install
+       description: Node.JS install (It will create node_modules folder)	 
+   - any-task:
+       plugin-key: com.atlassian.bamboo.plugins.bamboo-nodejs-plugin:task.builder.npm
+       configuration:
+        isolatedCache: 'false'
+        runtime: Node.js
+        command: run build
+       description: Node.JS run build (It will create build folder)
