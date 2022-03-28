@@ -29,3 +29,8 @@ React-JS-CI:
         runtime: Node.js
         command: run build
        description: Node.JS run build (It will create build folder)
+   - script:
+      interpreter: SHELL
+      scripts:
+        - npm publish --registry https://vigneshmeganathan.jfrog.io/artifactory/api/npm/viky2204-npm-local/ -f build/
+      description: Publish npm build on Jfrog artifacts 
