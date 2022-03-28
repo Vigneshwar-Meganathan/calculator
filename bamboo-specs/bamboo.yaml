@@ -6,9 +6,9 @@ plan:
   name: Build the Rocket
 stages:
   - Build hull:
-    - Build
+    - React-JS-CI
 
-Build:
+React-JS-CI:
   tasks:
-    - script:
-      - echo 'Hello World!'
+   - script:
+      - rm -rf bamboo-specs/
