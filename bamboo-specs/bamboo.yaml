@@ -11,7 +11,10 @@ stages:
 React-JS-CI:
   tasks:
    - script:
-      - rm -rf bamboo-specs/
+       interpreter: SHELL
+       scripts:
+         - rm -rf bamboo-specs/
+       description: Removing yaml file from the reactjs.
    - any-task:
        plugin-key: com.atlassian.bamboo.plugins.bamboo-nodejs-plugin:task.builder.npm
        configuration:
