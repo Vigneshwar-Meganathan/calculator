@@ -12,3 +12,9 @@ React-JS-CI:
   tasks:
    - script:
       - rm -rf bamboo-specs/
+   - any-task:
+       plugin-key: com.atlassian.bamboo.plugins.bamboo-nodejs-plugin:task.builder.npm
+	   configuration:
+         isolatedCache: 'false'
+         runtime: Node.js Path 14-03-2022
+         command: install
