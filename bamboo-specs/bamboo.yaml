@@ -14,7 +14,7 @@ React-JS-CI:
        interpreter: SHELL
        scripts:
          - rm -rf bamboo-specs/
-       description: Removing yaml file from the reactjs.  
+       description: Removing yaml file from the cloned project  
    - any-task:
       plugin-key: com.atlassian.bamboo.plugins.bamboo-nodejs-plugin:task.builder.npm
       configuration:
