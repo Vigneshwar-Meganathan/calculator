@@ -32,7 +32,7 @@ React-JS-CI:
    - script:
       interpreter: BINSH_OR_CMDEXE
       scripts:
-      - cp -R package.json /var/bamboo/bamboo-home/local-working-dir/RCTJS-RCTPL-JOB1/build/
+      - cp -R package.json /var/bamboo/bamboo-home/local-working-dir/MARS-RCTPUB-JOB1/build/
       description: Copying Package.json file to /build folder
    - script:
       interpreter: SHELL
